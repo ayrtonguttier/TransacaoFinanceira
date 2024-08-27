@@ -30,7 +30,7 @@ namespace TransacaoFinanceira
 
         }
     }
-
+    //Composition over inheritance
     class executarTransacaoFinanceira: acessoDados
     {
         public void transferir(int correlation_id, int conta_origem, int conta_destino, decimal valor)
