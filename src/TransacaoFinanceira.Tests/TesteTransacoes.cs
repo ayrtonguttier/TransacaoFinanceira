@@ -18,7 +18,7 @@ public class TesteTransacoes
     }
 
     [Fact]
-    public void TesteCompleto()
+    public void TransacaoEntreContas()
     {
         //arrange
         var culture = CultureInfo.GetCultureInfo("pr-BR");
@@ -39,9 +39,7 @@ public class TesteTransacoes
     }
 
 
-
-
-    public IContaRepository InicializarRepository()
+    private static IContaRepository InicializarRepository()
     {
         var repo = new ContaRepository();
         repo.AtualizarSaldo(new ContaSaldo(938485762, 180));
