@@ -38,6 +38,27 @@ public class TesteTransacoes
         contaDestino.Saldo.Should().Be(150);
     }
 
+    [Fact]
+    public void TransacaoValorMaiorQueSaldo()
+    {
+        //arrange
+        var culture = CultureInfo.GetCultureInfo("pr-BR");
+        ILogger<TransacaoExecutor> logger = new FakeLogger<TransacaoExecutor>(output.WriteLine);
+        IContaRepository repository = InicializarRepository();
+        TransacaoExecutor executor = new TransacaoExecutor(logger, repository);
+        var data = DateTime.Parse("09/09/2023 14:15:00", culture);
+        var transacao = new Transacao(1, data, 938485762, 2147483649, 200);
+
+        //act
+        executor.ExecutarTransacao(transacao);
+
+        //assert
+        var contaOrigem = repository.ConsultarConta(938485762);
+        var contaDestino = repository.ConsultarConta(2147483649);
+        contaOrigem.Saldo.Should().Be(180);
+        contaDestino.Saldo.Should().Be(0);
+    }
+
 
     private static IContaRepository InicializarRepository()
     {
