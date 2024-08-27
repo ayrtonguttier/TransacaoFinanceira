@@ -15,7 +15,7 @@ public class TransacaoExecutor
         this.contaRepository = contaRepository;
     }
 
-    public void ExecutarTransferencia(Transacao transacao)
+    public void ExecutarTransacao(Transacao transacao)
     {
         var contaOrigem = contaRepository.ConsultarConta(transacao.ContaOrigem);
 
