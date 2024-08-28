@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransacaoFinanceira", "Tran
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransacaoFinanceira.Tests", "TransacaoFinanceira.Tests\TransacaoFinanceira.Tests.csproj", "{2B926D44-73F4-4CD8-A63D-F437120CFFE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransacaoFinanceira.Console", "TransacaoFinanceira.Console\TransacaoFinanceira.Console.csproj", "{C59ABB44-853A-4A6A-964E-41E12445B422}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2B926D44-73F4-4CD8-A63D-F437120CFFE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B926D44-73F4-4CD8-A63D-F437120CFFE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B926D44-73F4-4CD8-A63D-F437120CFFE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C59ABB44-853A-4A6A-964E-41E12445B422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C59ABB44-853A-4A6A-964E-41E12445B422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C59ABB44-853A-4A6A-964E-41E12445B422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C59ABB44-853A-4A6A-964E-41E12445B422}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
