@@ -1,4 +1,11 @@
 # TransacaoFinanceira
+
+## Como executar
+
+``` bash
+dotnet run --project src/TransacaoFinanceira.Console
+```
+
 Case para refatoração
 
 Passos a implementar:
