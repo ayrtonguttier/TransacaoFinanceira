@@ -6,6 +6,10 @@
 dotnet run --project src/TransacaoFinanceira.Console
 ```
 
+## Detalhes da implementação
+
+[Refatoração](docs/codigo.md)
+
 Case para refatoração
 
 Passos a implementar:
